@@ -13,6 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: calculator.qmd
+        text: Calculators
 
   page-footer:
     left:

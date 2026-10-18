@@ -1,5 +1,7 @@
 ---
-title: "General information for statistics students at Stockholm University"
+title: "General information for statistics students"
 ---
 
-Welcome! This page collects general information for students at the [Department of Statistics](https://www.su.se/statistiska-institutionen/), Stockholm University.
+This page collects general information for students at the [Department of Statistics](https://www.su.se/statistiska-institutionen/), Stockholm University.
+
+- [Calculators in the exam rooms](calculator.qmd)

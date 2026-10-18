@@ -2,8 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "General information for statistics students at Stockholm University",
+    "title": "General information for statistics students",
     "section": "",
-    "text": "Welcome! This page collects general information for students at the Department of Statistics, Stockholm University."
+    "text": "This page collects general information for students at the Department of Statistics, Stockholm University.\n\nCalculators in the exam rooms"
+  },
+  {
+    "objectID": "calculator.html",
+    "href": "calculator.html",
+    "title": "Calculators during exams at SU",
+    "section": "",
+    "text": "Students can no longer bring their own calculators to the exams. The only permitted calculators are those provided in the exam rooms. Modern calculators can have internet access and AI features, so for security reasons personal calculators are no longer allowed.\n\n\nThe calculator provided\n\nThe exam rooms provide the Sagitta scientific calculator.\n\n\n\n\nClick the image for a larger version.\n\n\n\nHere is a manual, for the truly curious.\n\n\n\n\n\n\n\nImportantHow to change the decimal notation\n\n\n\nThe Sagitta calculator may use scientific notation by default:\n\nsmall numbers such as \\(0.000032\\) are shown as \\(3.2 ^{-05}\\) or \\(3.2e\\text{-}05\\)\nlarge numbers such as \\(12000000\\) are shown as \\(1.2^{07}\\) or \\(1.2e\\text{+}07\\)\n\nIf you prefer to see these numbers written out in full, do the following:\n\nPress the Mode button in the upper right several times until you see the screen below.\n\n\n\n\n\nPress 3 to choose the Norm mode.\nPress 2 to choose Norm 2. This mode switches to scientific notation only for very small and very large numbers."
   }
 ]
