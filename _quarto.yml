@@ -5,8 +5,7 @@ project:
     - .nojekyll
 
 website:
-  title: "General information for statistics students at Stockholm University"
-  favicon: /misc/favicon.ico
+  title: "General information for statistics students"
   navbar:
     logo: /misc/SU_logo_small.png
     background: primary

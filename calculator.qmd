@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-> **Students can no longer bring their own calculators to the exams**. The only permitted calculators are those provided in the exam rooms. Modern calculators can have internet access and AI features, so for security reasons personal calculators are no longer allowed.
+> **The only permitted calculators are those provided in the exam rooms**. Modern calculators can have internet access and AI features, so personal calculators are no longer allowed.
 
 #### The calculator provided
 
