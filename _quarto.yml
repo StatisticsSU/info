@@ -3,6 +3,8 @@ project:
   output-dir: docs
   resources:
     - .nojekyll
+    - misc/flag-gb.svg
+    - misc/flag-se.svg
 
 website:
   title: "General information for statistics students"
@@ -30,6 +32,7 @@ format:
       light: cosmo
       dark: superhero
     css: styles.css
+    include-after-body: misc/lang-toggle.html
     toc: true
     toc-title: Sections
 

@@ -350,7 +350,7 @@ window.Quarto = {
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="calculator.jpg"><img src="calculator/calculator.jpg" class="img-fluid figure-img" width="79"></a></p>
+<p><a href="calculator/calculator.jpg"><img src="calculator/calculator.jpg" class="img-fluid figure-img" width="79"></a></p>
 <figcaption>Click the image for a larger version.</figcaption>
 </figure>
 </div>
@@ -390,6 +390,55 @@ window.Quarto = {
 </section>
 
 </main> <!-- /main -->
+<style>
+.lang-toggle { display: inline-flex; gap: 0.4rem; align-items: center; margin-right: 0.5rem; }
+.lang-toggle img { height: 0.95rem; width: auto; border-radius: 2px; opacity: 0.45; }
+.lang-toggle a:hover img, .lang-toggle img.active { opacity: 1; }
+.lang-toggle img.active { outline: 2px solid rgba(255, 255, 255, 0.8); outline-offset: 1px; }
+</style>
+<script>
+// Language toggle: English pages live in the site root, Swedish pages with the
+// same file names in sv/. On Swedish pages the shared navbar and footer are translated.
+(function () {
+  const svText = {
+    "General information for statistics students": "Allmän information för statistikstudenter",
+    "Overview": "Översikt",
+    "Calculators": "Miniräknare",
+    "Department of Statistics - Stockholm University": "Statistiska institutionen - Stockholms universitet"
+  };
+
+  const isSv = document.documentElement.lang === "sv";
+  const offset = document.querySelector('meta[name="quarto:offset"]')?.content || "./";
+  const file = window.location.pathname.split("/").pop() || "index.html";
+
+  // Flag toggle in the top right of the navbar
+  const tools = document.querySelector(".quarto-navbar-tools");
+  if (tools) {
+    const flag = (href, img, label, active) =>
+      `<a href="${href}" title="${label}" aria-label="${label}">` +
+      `<img src="${offset}misc/${img}" alt="${label}"${active ? ' class="active"' : ""}></a>`;
+    const toggle = document.createElement("span");
+    toggle.className = "lang-toggle";
+    toggle.innerHTML =
+      flag(offset + file, "flag-gb.svg", "English", !isSv) +
+      flag(offset + "sv/" + file, "flag-se.svg", "Svenska", isSv);
+    tools.prepend(toggle);
+  }
+
+  if (!isSv) return;
+
+  // Point navbar links to the Swedish pages and translate labels
+  document.querySelectorAll(".navbar-nav .nav-link, a.navbar-brand").forEach((a) => {
+    const target = a.getAttribute("href").split("/").pop();
+    a.setAttribute("href", target);
+    a.classList.toggle("active", a.classList.contains("nav-link") && target === file);
+  });
+  document.querySelectorAll(".navbar .menu-text, .navbar-title, .nav-footer p").forEach((el) => {
+    const t = el.textContent.trim();
+    if (svText[t]) el.textContent = svText[t];
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

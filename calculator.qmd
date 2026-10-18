@@ -10,7 +10,7 @@ editor: visual
 
 -   The exam rooms provide the *Sagitta scientific calculator*.
 
-[![Click the image for a larger version.](calculator/calculator.jpg){width="79"}](calculator.jpg)
+[![Click the image for a larger version.](calculator/calculator.jpg){width="79"}](calculator/calculator.jpg)
 
 -   Here is a [manual](calculator/CalcSangittaManual.pdf), for the truly curious.
 
