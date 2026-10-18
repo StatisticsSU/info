@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - .nojekyll
+
+website:
+  title: "General information for statistics students at Stockholm University"
+  favicon: /misc/favicon.ico
+  navbar:
+    logo: /misc/SU_logo_small.png
+    background: primary
+    left:
+      - href: index.qmd
+        text: Overview
+
+  page-footer:
+    left:
+      - text: "Department of Statistics - Stockholm University"
+        href: https://www.su.se/statistiska-institutionen/
+    right:
+      - icon: github
+        href: https://github.com/StatisticsSU/info
+        aria-label: GitHub
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: superhero
+    css: styles.css
+    toc: true
+    toc-title: Sections
+
+execute:
+  freeze: auto
