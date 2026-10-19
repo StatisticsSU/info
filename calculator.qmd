@@ -6,42 +6,11 @@ editor: visual
 
 > **The only permitted calculators are those provided in the exam rooms**. Modern calculators can have internet access and AI features, so personal calculators are no longer allowed.
 
-#### The calculator provided
+The exam rooms provide the *Sagitta scientific calculator*.
 
--   The exam rooms provide the *Sagitta scientific calculator*.
+[![Click the image for a larger version.](calculator/calculator.jpg){fig-align="left" width="79"}](calculator/calculator.jpg)
 
-[![Click the image for a larger version.](calculator/calculator.jpg){width="79"}](calculator/calculator.jpg)
-
--   Here is a [manual](calculator/CalcSangittaManual.pdf), for the truly curious.
-
-::: callout-important
-## How to change the decimal notation
-
-The Sagitta calculator may use scientific notation by default:
-
--   small numbers such as $0.000032$ are shown as $3.2 ^{-05}$ or $3.2e\text{-}05$
-
--   large numbers such as $12000000$ are shown as $1.2^{07}$ or $1.2e\text{+}07$
-
-If you prefer to see these numbers written out in full, do the following:
-
--   Press the **Mode** button in the upper right several times until you see the screen below.
-
-    ![](calculator/CalcNotation.png){fig-align="center" width="108" height="35"}
-
--   Press **3** to choose the *Norm* mode.
-
--   Press **2** to choose *Norm 2*. This mode switches to scientific notation only for very small and very large numbers.
-:::
-
-::: callout-important
-## How to compute $e$ raised to a power
-
-There are (at least) two ways to enter, for example, $e^3$:
-
--   **Shift** + **ln**, then **3**
-
--   **Alpha** + **ln**, then **\^**, then **3**
-
-Both give $e^3$. A common mistake is to press **Shift** + **ln**, then **\^**, then **3**. This is the same as typing `e^^3` and gives a *Syntax error*.
-:::
+-   [How to change the decimal notation](calculator/decimalnotation.qmd).
+-   [How to compute powers of the number e](calculator/expnumber.qmd), for example $e^3$.
+-   All of the above as a [single PDF](calculator/calculator-guide.pdf), handy for printing.
+-   Here is a complete [manual](calculator/CalcSangittaManual.pdf), for the truly curious.

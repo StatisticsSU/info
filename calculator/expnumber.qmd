@@ -1,0 +1,7 @@
+---
+title: "How to compute powers of the number e"
+editor: visual
+format: html
+---
+
+{{< include _expnumber-body.qmd >}}

@@ -6,30 +6,11 @@ editor: visual
 
 > **De enda tillåtna miniräknarna är de som finns i tentasalarna**. Moderna miniräknare kan ha internetuppkoppling och AI-funktioner, så egna miniräknare är inte längre tillåtna.
 
-#### Miniräknaren som tillhandahålls
+I tentasalarna finns miniräknaren *Sagitta scientific calculator*.
 
--   I tentasalarna finns miniräknaren *Sagitta scientific calculator*.
+[![Klicka på bilden för en större version.](../calculator/calculator.jpg){fig-align="left" width="79"}](../calculator/calculator.jpg)
 
-[![Klicka på bilden för en större version.](../calculator/calculator.jpg){width="79"}](../calculator/calculator.jpg)
-
--   Här finns en [manual](../calculator/CalcSangittaManual.pdf), för den som är riktigt nyfiken.
-
-::: callout-important
-## Så ändrar du decimalnotationen
-
-Sagitta-miniräknaren kan som standard visa tal i grundpotensform (vetenskaplig notation):
-
--   små tal som $0.000032$ visas som $3.2 ^{-05}$ eller $3.2e\text{-}05$
-
--   stora tal som $12000000$ visas som $1.2^{07}$ eller $1.2e\text{+}07$
-
-Om du hellre vill se talen utskrivna i sin helhet gör du så här:
-
--   Tryck flera gånger på knappen **Mode** uppe till höger tills du ser skärmen nedan.
-
-    ![](../calculator/CalcNotation.png){fig-align="center" width="108" height="35"}
-
--   Tryck **3** för att välja läget *Norm*.
-
--   Tryck **2** för att välja *Norm 2*. I det här läget används grundpotensform bara för mycket små och mycket stora tal.
-:::
+-   [Så ändrar du decimalnotationen](calculator/decimalnotation.qmd).
+-   [Så beräknar du potenser av talet e](calculator/expnumber.qmd), till exempel $e^3$.
+-   Allt ovan samlat i en [PDF](calculator/miniraknare-guide.pdf), praktisk för utskrift.
+-   Här finns en komplett [manual](../calculator/CalcSangittaManual.pdf), för den som är riktigt nyfiken.

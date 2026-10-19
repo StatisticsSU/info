@@ -1,0 +1,7 @@
+---
+title: "Så ändrar du decimalnotationen"
+editor: visual
+format: html
+---
+
+{{< include _decimalnotation-body.qmd >}}

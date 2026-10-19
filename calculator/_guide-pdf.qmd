@@ -1,0 +1,28 @@
+---
+# Builds calculator/calculator-guide.pdf, linked from calculator.qmd.
+# Not part of the website render (leading underscore); rebuild with
+#   quarto render calculator/_guide-pdf.qmd
+title: "Calculators during exams at SU"
+format:
+  typst:
+    output-file: calculator-guide.pdf
+    include-before-body: ../misc/pdf-style.typ
+    papersize: a4
+    margin:
+      x: 2.2cm
+      y: 2cm
+---
+
+> **The only permitted calculators are those provided in the exam rooms**. Modern calculators can have internet access and AI features, so personal calculators are no longer allowed.
+
+The exam rooms provide the *Sagitta scientific calculator*.
+
+![](calculator.jpg){width="18%"}
+
+## How to change the decimal notation
+
+{{< include _decimalnotation-body.qmd >}}
+
+## How to compute powers of the number e
+
+{{< include _expnumber-body.qmd >}}

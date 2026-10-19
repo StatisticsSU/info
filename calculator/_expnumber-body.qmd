@@ -1,0 +1,9 @@
+There are (at least) two ways to enter, for example, $e^3$:
+
+::: {.callout-note appearance="minimal"}
+-   **Shift** + **ln**, then **3**
+
+-   **Alpha** + **ln**, then **\^**, then **3**
+:::
+
+Both give $e^3$. A common mistake is to press **Shift** + **ln**, then **\^**, then **3**. This is the same as typing `e^^3` and gives a *Syntax error*.

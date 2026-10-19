@@ -11,14 +11,42 @@
     "href": "sv/calculator.html",
     "title": "Miniräknare vid tentamen på SU",
     "section": "",
-    "text": "De enda tillåtna miniräknarna är de som finns i tentasalarna. Moderna miniräknare kan ha internetuppkoppling och AI-funktioner, så egna miniräknare är inte längre tillåtna.\n\n\nMiniräknaren som tillhandahålls\n\nI tentasalarna finns miniräknaren Sagitta scientific calculator.\n\n\n\n\nKlicka på bilden för en större version.\n\n\n\nHär finns en manual, för den som är riktigt nyfiken.\n\n\n\n\n\n\n\nViktigtSå ändrar du decimalnotationen\n\n\n\nSagitta-miniräknaren kan som standard visa tal i grundpotensform (vetenskaplig notation):\n\nsmå tal som \\(0.000032\\) visas som \\(3.2 ^{-05}\\) eller \\(3.2e\\text{-}05\\)\nstora tal som \\(12000000\\) visas som \\(1.2^{07}\\) eller \\(1.2e\\text{+}07\\)\n\nOm du hellre vill se talen utskrivna i sin helhet gör du så här:\n\nTryck flera gånger på knappen Mode uppe till höger tills du ser skärmen nedan.\n\n\n\n\n\nTryck 3 för att välja läget Norm.\nTryck 2 för att välja Norm 2. I det här läget används grundpotensform bara för mycket små och mycket stora tal."
+    "text": "De enda tillåtna miniräknarna är de som finns i tentasalarna. Moderna miniräknare kan ha internetuppkoppling och AI-funktioner, så egna miniräknare är inte längre tillåtna.\n\nI tentasalarna finns miniräknaren Sagitta scientific calculator.\n\n\n\n\n\n\n\nKlicka på bilden för en större version.\n\n\n\nSå ändrar du decimalnotationen.\nSå beräknar du potenser av talet e, till exempel \\(e^3\\).\nAllt ovan samlat i en PDF, praktisk för utskrift.\nHär finns en komplett manual, för den som är riktigt nyfiken."
+  },
+  {
+    "objectID": "sv/calculator/expnumber.html",
+    "href": "sv/calculator/expnumber.html",
+    "title": "Så beräknar du potenser av talet e",
+    "section": "",
+    "text": "Det finns (minst) två sätt att mata in till exempel \\(e^3\\):\n\n\n\n\n\n\n\nShift + ln, sedan 3\nAlpha + ln, sedan ^, sedan 3\n\n\n\n\nBåda ger \\(e^3\\). Ett vanligt misstag är att trycka Shift + ln, sedan ^, sedan 3. Det är samma sak som att skriva e^^3 och ger Syntax error."
+  },
+  {
+    "objectID": "calculator/decimalnotation.html",
+    "href": "calculator/decimalnotation.html",
+    "title": "How to change the decimal notation",
+    "section": "",
+    "text": "The Sagitta calculator may use scientific notation by default:\n\nsmall numbers such as \\(0.000032\\) are shown as \\(3.2 ^{-05}\\) or \\(3.2e\\text{-}05\\)\nlarge numbers such as \\(12000000\\) are shown as \\(1.2^{07}\\) or \\(1.2e\\text{+}07\\)\n\nIf you prefer to see these numbers written out in full, do the following:\n\n\n\n\n\n\n\nPress the Mode button in the upper right several times until you see the screen below.\n\n\n\n\n\nPress 3 to choose the Norm mode.\nPress 2 to choose Norm 2. This mode switches to scientific notation only for very small and very large numbers."
+  },
+  {
+    "objectID": "calculator/expnumber.html",
+    "href": "calculator/expnumber.html",
+    "title": "How to compute powers of the number e",
+    "section": "",
+    "text": "There are (at least) two ways to enter, for example, \\(e^3\\):\n\n\n\n\n\n\n\nShift + ln, then 3\nAlpha + ln, then ^, then 3\n\n\n\n\nBoth give \\(e^3\\). A common mistake is to press Shift + ln, then ^, then 3. This is the same as typing e^^3 and gives a Syntax error."
   },
   {
     "objectID": "calculator.html",
     "href": "calculator.html",
     "title": "Calculators during exams at SU",
     "section": "",
-    "text": "The only permitted calculators are those provided in the exam rooms. Modern calculators can have internet access and AI features, so personal calculators are no longer allowed.\n\n\nThe calculator provided\n\nThe exam rooms provide the Sagitta scientific calculator.\n\n\n\n\nClick the image for a larger version.\n\n\n\nHere is a manual, for the truly curious.\n\n\n\n\n\n\n\nImportantHow to change the decimal notation\n\n\n\nThe Sagitta calculator may use scientific notation by default:\n\nsmall numbers such as \\(0.000032\\) are shown as \\(3.2 ^{-05}\\) or \\(3.2e\\text{-}05\\)\nlarge numbers such as \\(12000000\\) are shown as \\(1.2^{07}\\) or \\(1.2e\\text{+}07\\)\n\nIf you prefer to see these numbers written out in full, do the following:\n\nPress the Mode button in the upper right several times until you see the screen below.\n\n\n\n\n\nPress 3 to choose the Norm mode.\nPress 2 to choose Norm 2. This mode switches to scientific notation only for very small and very large numbers.\n\n\n\n\n\n\n\n\n\nImportantHow to compute \\(e\\) raised to a power\n\n\n\nThere are (at least) two ways to enter, for example, \\(e^3\\):\n\nShift + ln, then 3\nAlpha + ln, then ^, then 3\n\nBoth give \\(e^3\\). A common mistake is to press Shift + ln, then ^, then 3. This is the same as typing e^^3 and gives a Syntax error."
+    "text": "The only permitted calculators are those provided in the exam rooms. Modern calculators can have internet access and AI features, so personal calculators are no longer allowed.\n\nThe exam rooms provide the Sagitta scientific calculator.\n\n\n\n\n\n\n\nClick the image for a larger version.\n\n\n\nHow to change the decimal notation.\nHow to compute powers of the number e, for example \\(e^3\\).\nAll of the above as a single PDF, handy for printing.\nHere is a complete manual, for the truly curious."
+  },
+  {
+    "objectID": "sv/calculator/decimalnotation.html",
+    "href": "sv/calculator/decimalnotation.html",
+    "title": "Så ändrar du decimalnotationen",
+    "section": "",
+    "text": "Sagitta-miniräknaren kan som standard visa tal i grundpotensform (vetenskaplig notation):\n\nsmå tal som \\(0.000032\\) visas som \\(3.2 ^{-05}\\) eller \\(3.2e\\text{-}05\\)\nstora tal som \\(12000000\\) visas som \\(1.2^{07}\\) eller \\(1.2e\\text{+}07\\)\n\nOm du hellre vill se talen utskrivna i sin helhet gör du så här:\n\n\n\n\n\n\n\nTryck flera gånger på knappen Mode uppe till höger tills du ser skärmen nedan.\n\n\n\n\n\nTryck 3 för att välja läget Norm.\nTryck 2 för att välja Norm 2. I det här läget används grundpotensform bara för mycket små och mycket stora tal."
   },
   {
     "objectID": "sv/index.html",

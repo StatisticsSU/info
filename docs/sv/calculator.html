@@ -343,51 +343,25 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p><strong>De enda tillåtna miniräknarna är de som finns i tentasalarna</strong>. Moderna miniräknare kan ha internetuppkoppling och AI-funktioner, så egna miniräknare är inte längre tillåtna.</p>
 </blockquote>
-<section id="miniräknaren-som-tillhandahålls" class="level4">
-<h4 class="anchored" data-anchor-id="miniräknaren-som-tillhandahålls">Miniräknaren som tillhandahålls</h4>
-<ul>
-<li>I tentasalarna finns miniräknaren <em>Sagitta scientific calculator</em>.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
+<p>I tentasalarna finns miniräknaren <em>Sagitta scientific calculator</em>.</p>
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="../calculator/calculator.jpg"><img src="../calculator/calculator.jpg" class="img-fluid figure-img" width="79"></a></p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../calculator/calculator.jpg"><img src="../calculator/calculator.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" width="79"></a></p>
+</figure>
+</div>
 <figcaption>Klicka på bilden för en större version.</figcaption>
 </figure>
 </div>
 <ul>
-<li>Här finns en <a href="../calculator/CalcSangittaManual.pdf">manual</a>, för den som är riktigt nyfiken.</li>
+<li><a href="../sv/calculator/decimalnotation.html">Så ändrar du decimalnotationen</a>.</li>
+<li><a href="../sv/calculator/expnumber.html">Så beräknar du potenser av talet e</a>, till exempel <span class="math inline">\(e^3\)</span>.</li>
+<li>Allt ovan samlat i en <a href="calculator/miniraknare-guide.pdf">PDF</a>, praktisk för utskrift.</li>
+<li>Här finns en komplett <a href="../calculator/CalcSangittaManual.pdf">manual</a>, för den som är riktigt nyfiken.</li>
 </ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Viktigt</span>Så ändrar du decimalnotationen
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Sagitta-miniräknaren kan som standard visa tal i grundpotensform (vetenskaplig notation):</p>
-<ul>
-<li><p>små tal som <span class="math inline">\(0.000032\)</span> visas som <span class="math inline">\(3.2 ^{-05}\)</span> eller <span class="math inline">\(3.2e\text{-}05\)</span></p></li>
-<li><p>stora tal som <span class="math inline">\(12000000\)</span> visas som <span class="math inline">\(1.2^{07}\)</span> eller <span class="math inline">\(1.2e\text{+}07\)</span></p></li>
-</ul>
-<p>Om du hellre vill se talen utskrivna i sin helhet gör du så här:</p>
-<ul>
-<li><p>Tryck flera gånger på knappen <strong>Mode</strong> uppe till höger tills du ser skärmen nedan.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../calculator/CalcNotation.png" class="quarto-figure quarto-figure-center figure-img" width="108" height="35"></p>
-</figure>
-</div></li>
-<li><p>Tryck <strong>3</strong> för att välja läget <em>Norm</em>.</p></li>
-<li><p>Tryck <strong>2</strong> för att välja <em>Norm 2</em>. I det här läget används grundpotensform bara för mycket små och mycket stora tal.</p></li>
-</ul>
-</div>
-</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <style>
@@ -409,7 +383,14 @@ window.Quarto = {
 
   const isSv = document.documentElement.lang === "sv";
   const offset = document.querySelector('meta[name="quarto:offset"]')?.content || "./";
-  const file = window.location.pathname.split("/").pop() || "index.html";
+  const root = new URL(offset, window.location.href).href;
+  // Path of a site URL relative to the site root, without the sv/ prefix
+  const sitePath = (url) => {
+    let p = url.split(/[?#]/)[0].slice(root.length);
+    if (p === "" || p.endsWith("/")) p += "index.html";
+    return p.replace(/^sv\//, "");
+  };
+  const file = sitePath(window.location.href);
 
   // Flag toggle in the top right of the navbar
   const tools = document.querySelector(".quarto-navbar-tools");
@@ -429,8 +410,9 @@ window.Quarto = {
 
   // Point navbar links to the Swedish pages and translate labels
   document.querySelectorAll(".navbar-nav .nav-link, a.navbar-brand").forEach((a) => {
-    const target = a.getAttribute("href").split("/").pop();
-    a.setAttribute("href", target);
+    if (!a.href.startsWith(root)) return;
+    const target = sitePath(a.href);
+    a.setAttribute("href", offset + "sv/" + target);
     a.classList.toggle("active", a.classList.contains("nav-link") && target === file);
   });
   document.querySelectorAll(".navbar .menu-text, .navbar-title, .nav-footer p").forEach((el) => {

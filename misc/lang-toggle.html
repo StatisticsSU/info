@@ -17,7 +17,14 @@
 
   const isSv = document.documentElement.lang === "sv";
   const offset = document.querySelector('meta[name="quarto:offset"]')?.content || "./";
-  const file = window.location.pathname.split("/").pop() || "index.html";
+  const root = new URL(offset, window.location.href).href;
+  // Path of a site URL relative to the site root, without the sv/ prefix
+  const sitePath = (url) => {
+    let p = url.split(/[?#]/)[0].slice(root.length);
+    if (p === "" || p.endsWith("/")) p += "index.html";
+    return p.replace(/^sv\//, "");
+  };
+  const file = sitePath(window.location.href);
 
   // Flag toggle in the top right of the navbar
   const tools = document.querySelector(".quarto-navbar-tools");
@@ -37,8 +44,9 @@
 
   // Point navbar links to the Swedish pages and translate labels
   document.querySelectorAll(".navbar-nav .nav-link, a.navbar-brand").forEach((a) => {
-    const target = a.getAttribute("href").split("/").pop();
-    a.setAttribute("href", target);
+    if (!a.href.startsWith(root)) return;
+    const target = sitePath(a.href);
+    a.setAttribute("href", offset + "sv/" + target);
     a.classList.toggle("active", a.classList.contains("nav-link") && target === file);
   });
   document.querySelectorAll(".navbar .menu-text, .navbar-title, .nav-footer p").forEach((el) => {

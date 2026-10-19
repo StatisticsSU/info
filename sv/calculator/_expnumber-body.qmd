@@ -1,0 +1,9 @@
+Det finns (minst) två sätt att mata in till exempel $e^3$:
+
+::: {.callout-note appearance="minimal"}
+-   **Shift** + **ln**, sedan **3**
+
+-   **Alpha** + **ln**, sedan **\^**, sedan **3**
+:::
+
+Båda ger $e^3$. Ett vanligt misstag är att trycka **Shift** + **ln**, sedan **\^**, sedan **3**. Det är samma sak som att skriva `e^^3` och ger *Syntax error*.

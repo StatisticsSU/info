@@ -1,0 +1,7 @@
+---
+title: "Så beräknar du potenser av talet e"
+editor: visual
+format: html
+---
+
+{{< include _expnumber-body.qmd >}}
