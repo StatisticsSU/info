@@ -33,3 +33,15 @@ If you prefer to see these numbers written out in full, do the following:
 
 -   Press **2** to choose *Norm 2*. This mode switches to scientific notation only for very small and very large numbers.
 :::
+
+::: callout-important
+## How to compute $e$ raised to a power
+
+There are (at least) two ways to enter, for example, $e^3$:
+
+-   **Shift** + **ln**, then **3**
+
+-   **Alpha** + **ln**, then **\^**, then **3**
+
+Both give $e^3$. A common mistake is to press **Shift** + **ln**, then **\^**, then **3**. This is the same as typing `e^^3` and gives a *Syntax error*.
+:::
