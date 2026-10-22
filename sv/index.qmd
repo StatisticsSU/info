@@ -5,3 +5,4 @@ title: "Allmän information för statistikstudenter"
 Den här sidan samlar allmän information för studenter vid [Statistiska institutionen](https://www.su.se/statistiska-institutionen/), Stockholms universitet.
 
 - [Miniräknare i tentasalarna](calculator.qmd)
+- [En samling datamaterial som används i våra kurser](https://github.com/StatisticsSU/SUdatasets)
