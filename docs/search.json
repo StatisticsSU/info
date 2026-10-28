@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "General information for statistics students",
     "section": "",
-    "text": "This page collects general information for students at the Department of Statistics, Stockholm University.\n\nCalculators in the exam rooms\nA collection of some datasets used in our courses"
+    "text": "This page collects general information for students at the Department of Statistics, Stockholm University.\n\nGeneral\n\nCalculators in the exam rooms\nA collection of some datasets used in our courses\n\n\n\nMaster’s program in Data Science, Statistic and Decision Analysis\n\nMaster thesis process"
   },
   {
     "objectID": "sv/calculator.html",
@@ -54,5 +54,19 @@
     "title": "Allmän information för statistikstudenter",
     "section": "",
     "text": "Den här sidan samlar allmän information för studenter vid Statistiska institutionen, Stockholms universitet.\n\nMiniräknare i tentasalarna\nEn samling datamaterial som används i våra kurser"
+  },
+  {
+    "objectID": "index.html#general",
+    "href": "index.html#general",
+    "title": "General information for statistics students",
+    "section": "General",
+    "text": "General\n\nCalculators in the exam rooms\nA collection of some datasets used in our courses"
+  },
+  {
+    "objectID": "index.html#masters-program-in-data-science-statistic-and-decision-analysis",
+    "href": "index.html#masters-program-in-data-science-statistic-and-decision-analysis",
+    "title": "General information for statistics students",
+    "section": "Master’s program in Data Science, Statistic and Decision Analysis",
+    "text": "Master’s program in Data Science, Statistic and Decision Analysis\n\nMaster thesis process"
   }
 ]

@@ -4,5 +4,11 @@ title: "General information for statistics students"
 
 This page collects general information for students at the [Department of Statistics](https://www.su.se/statistiska-institutionen/), Stockholm University.
 
+## General
+
 - [Calculators in the exam rooms](calculator.qmd)
 - [A collection of some datasets used in our courses](https://github.com/StatisticsSU/SUdatasets)
+
+## Master's program in Data Science, Statistic and Decision Analysis
+
+- [Master thesis process](dsv_master/Instructions4Supervisors.pdf)
